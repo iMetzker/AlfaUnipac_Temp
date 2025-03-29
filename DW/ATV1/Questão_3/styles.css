@@ -1,0 +1,146 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  line-height: 1.15;
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.5rem;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: #6c757d;
+  overflow-x: hidden;
+}
+
+a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+section {
+  max-width: 1140px;
+  margin: 0 auto;
+  min-height: 50vh;
+  padding: 5rem 2rem;
+}
+
+/* MENU */
+  .menu {
+    position: relative;
+    z-index: 2;
+    min-width: 100vw;
+    background-color: #ffffff;
+    border-bottom: 0.1rem solid #e5e5e5;
+  }
+  
+  .menu-content {
+    height: 100%;
+    margin: 0 auto;
+    padding: 3rem 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .menu ul {
+    list-style: none;
+    display: flex;
+    margin-top: 2rem;
+  }
+  
+  .menu ul a {
+    color: #000;
+    display: block;
+    padding: 0 2rem;
+    font-size: 1.6rem;
+    position: relative;
+  }
+  
+  .menu-logo a {
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    color: #000;
+  }
+  
+  .menu-logo a:hover {
+    cursor: pointer;
+  }
+  
+  .menu-logo a span.logo-detail {
+    font-weight: bold;
+  }
+  
+  .menu-logo a span.logo-detail-point {
+    margin-top: -1.5rem;
+    font-size: 5rem;
+    color: #148bcb;
+  }
+  
+  
+  .menu-content nav a::after {
+    content: "";
+    position: absolute;
+    bottom: -1rem;
+    left: 50%;
+    width: 0;
+    height: 0.2rem;
+    background-color: #148bcb;
+    transition: all 300ms ease-in-out;
+  }
+  
+  .menu-content nav a:hover::after {
+    width: 50%;
+    left: 25%;
+  }
+
+/* LISTA DE LIVROS*/
+.text_title {
+  font-size: 80px;
+  text-transform: uppercase;
+  color: white;
+  -webkit-text-stroke: 1px #dee2e6;
+  margin: 0;
+}
+
+.text_sub_title {
+  position: absolute;
+  text-transform: uppercase;
+  color: #148bcb;
+  margin: 0;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.title_container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+table {
+  border-collapse: collapse;
+  margin-top: 2em;
+  width: 100%;
+}
+
+th {
+  background-color: #148bcb;
+  color: #ffffff;
+}
+
+th,
+td {
+  padding: 0.8rem;
+  border: 1px solid #dee2e6;
+}
