@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 isDeleting = true;
             }
         }
-        setTimeout(type, isDeleting ? 100 : 200);
+        setTimeout(type, isDeleting ? 60 : 100);
     }
 
     type();
