@@ -16,13 +16,13 @@ Repositório de exercícios avaliativos, lista 01.
 ## 💻 View
 
 ### Questão 1
-<img scr="./img/Questão_01.png" alt="Primeira questão">
+<img src="./img/Questão_01.png" alt="Primeira Questão">
 
 ### Questão 2
-<img scr="./img/Questão_02.png" alt="Segunda questão">
+<img src="./img/Questão_02.png" alt="Segunda questão">
 
 ### Questão 3
-<img scr="./img/Questão_03.png" alt="Terceira questão">
+<img src="./img/Questão_03.png" alt="Terceira questão">
 
 ## 🧵 Exercícios
 
