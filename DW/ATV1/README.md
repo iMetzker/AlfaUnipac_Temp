@@ -32,15 +32,15 @@ Repositório de exercícios avaliativos, lista 01.
     <th>Descrição</th>
   </tr>
   <tr>
-    <td><a href="/ATV1/Questao_1/">Questao_1</a></td>
+    <td><a href="https://github.com/iMetzker/AlfaUnipac_Temp/tree/main/DW/ATV1/Questao_1">Questao_1</a></td>
     <td>Portifólio</td>
   </tr>
   <tr>
-    <td><a href="/ATV1/Questao_2/">Questao_2</a></td>
+    <td><a href="https://github.com/iMetzker/AlfaUnipac_Temp/tree/main/DW/ATV1/Questao_2">Questao_2</a></td>
     <td>Blog</td>
   </tr>
   <tr>
-    <td><a href="/ATV1/Questao_3/">Questao_3</a></td>
+    <td><a href="https://github.com/iMetzker/AlfaUnipac_Temp/tree/main/DW/ATV1/Questao_3">Questao_3</a></td>
     <td>Notícias</td>
   </tr>
 </table>
