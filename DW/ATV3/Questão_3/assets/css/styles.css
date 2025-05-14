@@ -1,0 +1,55 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Montserrat", sans-serif;
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+section {
+    background-color: #f0f0f0;
+    min-height: 100vh; 
+    
+    display: grid;
+    place-items: center;
+}
+
+.cubes {
+    display: grid;
+    gap: 0.5rem;
+    grid-template-columns: repeat(2, 1fr);
+
+    max-width: 150px;
+}
+
+.cube1,
+.cube2,
+.cube3,
+.cube4 {
+    width: 50px;
+    height: 50px;
+    border-radius: 1rem;
+}
+
+.cube1 {
+    background-color: #ff7f7f;
+}
+
+.cube2 {
+    background-color: #7fbfff;
+}
+
+.cube3 {
+    background-color: #7fff7f;
+}
+
+.cube4 {
+    background-color: #ffff7f;
+}
