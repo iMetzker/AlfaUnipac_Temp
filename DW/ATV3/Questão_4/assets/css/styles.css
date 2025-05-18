@@ -1,55 +1,75 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
+ body {
+      font-family: Arial, sans-serif;
+      background-color: #eceff1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
 
-html {
-    font-family: "Montserrat", sans-serif;
-    font-size: 62.5%;
-}
+    h1 {
+      margin-bottom: 30px;
+      color: #333;
+    }
 
-body {
-    font-size: 1.6rem;
-}
+    .tabuleiro {
+      display: grid;
+      grid-template-columns: repeat(4, 100px);
+      grid-gap: 15px;
+    }
 
-section {
-    background-color: #f0f0f0;
-    min-height: 100vh; 
-    
-    display: grid;
-    place-items: center;
-}
+    input[type="checkbox"] {
+      display: none;
+    }
 
-.cubes {
-    display: grid;
-    gap: 0.5rem;
-    grid-template-columns: repeat(2, 1fr);
+    .carta {
+      width: 100px;
+      height: 100px;
+      background-color: #bbb;
+      border-radius: 10px;
+      cursor: pointer;
+      position: relative;
+      transform-style: preserve-3d;
+      transition: transform 0.6s;
+    }
 
-    max-width: 150px;
-}
+    .carta::before,
+    .carta::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
+      backface-visibility: hidden;
+    }
 
-.cube1,
-.cube2,
-.cube3,
-.cube4 {
-    width: 50px;
-    height: 50px;
-    border-radius: 1rem;
-}
+    .carta::before {
+      background-color: #ccc;
+    }
 
-.cube1 {
-    background-color: #ff7f7f;
-}
+    .carta::after {
+      background-size: cover;
+      transform: rotateY(180deg);
+    }
 
-.cube2 {
-    background-color: #7fbfff;
-}
+    .carta1::after {
+        background-image: url('../img/gandalf.jpeg');
+    }
 
-.cube3 {
-    background-color: #7fff7f;
-}
+     .carta2::after {
+        background-image: url('../img/smeagol.webp');
+    }
 
-.cube4 {
-    background-color: #ffff7f;
-}
+     .carta3::after {
+        background-image: url('../img/thauriel.jpg');
+    }
+
+     .carta4::after {
+        background-image: url('../img/thorin.jpg');
+    }
+
+    input:checked + label .carta {
+      transform: rotateY(180deg);
+    }

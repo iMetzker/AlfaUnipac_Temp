@@ -16,15 +16,58 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
+  <h1>Jogo da Terra Média</h1>
+  <div class="tabuleiro">
+    <input type="checkbox" id="c1">
+    <label for="c1"><div class="carta carta1"></div></label>
 
-    <section>
-        <div class="cubes">
-            <div class="cube1"></div>
-            <div class="cube2"></div>
-            <div class="cube3"></div>
-            <div class="cube4"></div>
-        </div>
-    </section>
+    <input type="checkbox" id="c2">
+    <label for="c2"><div class="carta carta2"></div></label>
 
+    <input type="checkbox" id="c3">
+    <label for="c3"><div class="carta carta3"></div></label>
+
+    <input type="checkbox" id="c4">
+    <label for="c4"><div class="carta carta1"></div></label>
+
+    <input type="checkbox" id="c5">
+    <label for="c5"><div class="carta carta2"></div></label>
+
+    <input type="checkbox" id="c6">
+    <label for="c6"><div class="carta carta4"></div></label>
+
+    <input type="checkbox" id="c7">
+    <label for="c7"><div class="carta carta4"></div></label>
+
+    <input type="checkbox" id="c8">
+    <label for="c8"><div class="carta carta3"></div></label>
+  </div>
+
+  <!-- Script inofensivo só para dar um sentido ao acertar o par certo -->
+  <script>
+    const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+
+    let selecionadas = [];
+
+    checkboxes.forEach((checkbox) => {
+      checkbox.addEventListener('change', () => {
+        const carta = checkbox.nextElementSibling.querySelector('.carta');
+        if (checkbox.checked) {
+          selecionadas.push({ checkbox, classe: carta.classList[1] });
+
+          if (selecionadas.length === 2) {
+            const [c1, c2] = selecionadas;
+            if (c1.classe !== c2.classe) {
+              setTimeout(() => {
+                c1.checkbox.checked = false;
+                c2.checkbox.checked = false;
+              }, 1000);
+            }
+            selecionadas = [];
+          }
+        }
+      });
+    });
+  </script>
 </body>
 </html>

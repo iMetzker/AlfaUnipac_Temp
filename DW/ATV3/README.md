@@ -16,16 +16,16 @@ Repositório de exercícios avaliativos, lista 03.
 ## 💻 View
 
 ### Questão 1
-<img src="./img/Questão_01.png" alt="Primeira Questão">
+<img src="./assets/img/q1.png" alt="Primeira Questão">
 
 ### Questão 2
-<img src="./img/Questão_02.png" alt="Segunda questão">
+<img src="./assets/img/q2.png" alt="Segunda questão">
 
 ### Questão 3
-<img src="./img/Questão_03.png" alt="Terceira questão">
+<img src="./assets/img/q3.png" alt="Terceira questão">
 
-### Questão 3
-<img src="./img/Questão_03.png" alt="Terceira questão">
+### Questão 4
+<img src="./assets/img/q4.png" alt="Terceira questão">
 
 ## 🧵 Exercícios
 
@@ -35,15 +35,19 @@ Repositório de exercícios avaliativos, lista 03.
     <th>Descrição</th>
   </tr>
   <tr>
-    <td><a href="https://github.com/iMetzker/AlfaUnipac_Temp/tree/main/DW/ATV1/Questao_1">Questao_1</a></td>
+    <td><a href="https://github.com/iMetzker/AlfaUnipac_Temp/tree/main/DW/ATV3/Questao_1">Questao_1</a></td>
+    <td>Cubos</td>
+  </tr>
+  <tr>
+    <td><a href="https://github.com/iMetzker/AlfaUnipac_Temp/tree/main/DW/ATV3/Questao_2">Questao_2</a></td>
+    <td>Clone Tela</td>
+  </tr>
+  <tr>
+    <td><a href="https://github.com/iMetzker/AlfaUnipac_Temp/tree/main/DW/ATV3/Questao_3">Questao_3</a></td>
     <td>Portifólio</td>
   </tr>
-  <tr>
-    <td><a href="https://github.com/iMetzker/AlfaUnipac_Temp/tree/main/DW/ATV1/Questao_2">Questao_2</a></td>
-    <td>Blog</td>
-  </tr>
-  <tr>
-    <td><a href="https://github.com/iMetzker/AlfaUnipac_Temp/tree/main/DW/ATV1/Questao_3">Questao_3</a></td>
-    <td>Notícias</td>
+   <tr>
+    <td><a href="https://github.com/iMetzker/AlfaUnipac_Temp/tree/main/DW/ATV3/Questao_4">Questao_4</a></td>
+    <td>Jogo da Memória</td>
   </tr>
 </table>
