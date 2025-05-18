@@ -14,42 +14,46 @@ body {
 }
 
 section {
-    background-color: #f0f0f0;
+    background-color: #2196f3;
     min-height: 100vh; 
     
     display: grid;
-    place-items: center;
 }
 
-.cubes {
+.container {
     display: grid;
-    gap: 0.5rem;
-    grid-template-columns: repeat(2, 1fr);
-
-    max-width: 150px;
+    gap: 1rem;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr repeat(4, 2fr) 1fr;
 }
 
-.cube1,
-.cube2,
-.cube3,
-.cube4 {
-    width: 50px;
-    height: 50px;
+.container_header {
+    background-color: #4caf50;
+    grid-column: span 6;
+}
+
+.content {
+    grid-column: span 2;
+    grid-row: span 2;
+    background-color: #ff4081;
     border-radius: 1rem;
 }
 
-.cube1 {
-    background-color: #ff7f7f;
+.marginl {
+    margin-left: 1rem;
 }
 
-.cube2 {
-    background-color: #7fbfff;
+.marginr {
+    margin-right: 1rem;
 }
 
-.cube3 {
-    background-color: #7fff7f;
+.description {
+    background-color: #9c27b0;    
+    grid-row: span 2;
+    border-radius: 1rem;
 }
 
-.cube4 {
-    background-color: #ffff7f;
+.footer {
+    grid-column: span 6;
+    background-color: #ff5722;
 }

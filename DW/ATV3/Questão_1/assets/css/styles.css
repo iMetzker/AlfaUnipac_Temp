@@ -14,29 +14,42 @@ body {
 }
 
 section {
-    background-color: #2196f3;
+    background-color: #f0f0f0;
     min-height: 100vh; 
     
     display: grid;
+    place-items: center;
 }
 
-.container {
-
-    padding: 0 1rem;
+.cubes {
     display: grid;
-    gap: 1rem;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: 1fr repeat(4, 2fr) 1fr;
+    gap: 0.5rem;
+    grid-template-columns: repeat(2, 1fr);
+
+    max-width: 150px;
 }
 
-.container_header {
-    background-color: #4caf50;
-
-    grid-column: span 6;
+.cube1,
+.cube2,
+.cube3,
+.cube4 {
+    width: 50px;
+    height: 50px;
+    border-radius: 1rem;
 }
 
-.content {
-    grid-column: span 2;
-    grid-row: span 2;
-    background-color: #ff4081;
+.cube1 {
+    background-color: #ff7f7f;
+}
+
+.cube2 {
+    background-color: #7fbfff;
+}
+
+.cube3 {
+    background-color: #7fff7f;
+}
+
+.cube4 {
+    background-color: #ffff7f;
 }
